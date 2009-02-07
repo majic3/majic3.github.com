@@ -1,0 +1,39 @@
+@import "boilerplate.css";
+@import "plugins.css";
+
+/* -------------------------------------------------------------- 
+   SCREEN
+-------------------------------------------------------------- */
+
+/* PAGE */
+#page {
+	width: 100%;
+}
+
+/* HEADER */
+#header { padding: 20px; background: #333; border-bottom: 2px solid #222; }
+#header h1 { margin-bottom: 0; font-size: 20px; line-height: 20px; color: #fff; }
+
+/* NAVIGATION */
+#navigation { padding: 0 10px; background: #ddd; border-bottom: 2px solid #bbb; }
+#navigation .tabs a { padding: 5px 10px; color: #666; text-decoration: none; }
+#navigation .tabs a:hover { background: #bbb; color: #333; }
+
+/* BODY */
+#body { padding: 20px; width: 820px; margin: 1.4em auto; }
+
+/* MAIN */
+#main { float: left; width: 620px; margin: 10px 15px 0 0; }
+
+/* SIDEBAR */
+#sidebar { float: left; margin: 10px 0 0 0; width: 170px; }
+#sidebar h3 { color: #888; }
+#sidebar ul, #sidebar ol { color: #888; }
+#sidebar ul a { color: #555; }
+
+/* FOOTER */
+#footer { padding: 10px 20px; border-top: 1px solid #eee; }
+#footer .tabs { font-size: 13px; }
+#footer .tabs li { margin-right: 20px; }
+#footer .tabs a { color: #999; text-decoration: none; }
+#footer p.quiet { color: #ccc; }
