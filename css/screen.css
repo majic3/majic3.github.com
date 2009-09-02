@@ -1,39 +1,80 @@
-@import "boilerplate.css";
-@import "plugins.css";
 
-/* -------------------------------------------------------------- 
-   SCREEN
--------------------------------------------------------------- */
+@import url("oocss/libraries.css");
+@import url("oocss/template.css");:
+@import url("oocss/css/grids.css");:
+@import url("oocss/css/content.css");:
+@import url("oocss/css/mod.css");:
+@import url("oocss/css/mod_skins.css");
 
-/* PAGE */
-#page {
-	width: 100%;
+body { font: 12px/18px normal Georgia, serif; }
+p, li { font-size: 1em; /* 13px */ line-height: 1.5em; /* 19px */ }
+p { margin: 0 0 1.5em 0; }
+li { line-height: 1.5em; margin: 0; }
+
+
+ul.tabs { margin: 0; padding: 0; }
+ul.tabs li ul { float: left; }
+ul.tabs li { float: left; list-style: none; margin: 0; padding: 0; }
+ul.tabs li a { float: left; display: block; }
+
+/* Clearing floats without extra markup  */
+ul.tabs { display: inline-block; }
+ul.tabs:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html ul.tabs { height: 1%; }
+ul.tabs, ul.tabs li ul { display: block; }
+
+#header	{	width: 100%	}
+
+.liquid .body	{
+	margin: 1.614em auto;
+	width: 960px;
 }
 
-/* HEADER */
-#header { padding: 20px; background: #333; border-bottom: 2px solid #222; }
-#header h1 { margin-bottom: 0; font-size: 20px; line-height: 20px; color: #fff; }
-
+/* .head, .hd, .body, .bd, .foot, .ft	{	background: transparent url('./baseline_vc.gif')	} */
 /* NAVIGATION */
 #navigation { padding: 0 10px; background: #ddd; border-bottom: 2px solid #bbb; }
 #navigation .tabs a { padding: 5px 10px; color: #666; text-decoration: none; }
 #navigation .tabs a:hover { background: #bbb; color: #333; }
 
-/* BODY */
-#body { padding: 20px; width: 820px; margin: 1.4em auto; }
+.unit,
+.lastUnit	{
+	padding-right: 1.618em;
+}
 
-/* MAIN */
-#main { float: left; width: 620px; margin: 10px 15px 0 0; }
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote {padding:0;}
 
-/* SIDEBAR */
-#sidebar { float: left; margin: 10px 0 0 0; width: 170px; }
-#sidebar h3 { color: #888; }
-#sidebar ul, #sidebar ol { color: #888; }
-#sidebar ul a { color: #555; }
+h1, .h1{font-size: 2em; /* 26px */ line-height: 1.4615em; /* 38px */ margin-top: 0.7308em; margin-bottom: 0em;  font-weight:normal; font-style: normal; color:#222;}
+body > h1	{	text-align: center; margin-right: auto; margin-left: auto;	}
 
-/* FOOTER */
-#footer { padding: 10px 20px; border-top: 1px solid #eee; }
-#footer .tabs { font-size: 13px; }
-#footer .tabs li { margin-right: 20px; }
-#footer .tabs a { color: #999; text-decoration: none; }
-#footer p.quiet { color: #ccc; }
+h2, .h2{font-size: 1.7692em; /* 23px */ line-height: 1.6522em; /* 38px */ margin-top: 0.2261em; margin-bottom: 1em; font-weight:normal; font-style: normal; color:#333;}
+.head h2, .head .h2{font-size: 1.7692em; /* 23px */ line-height: 1.6522em; /* 38px */ margin-top: 0.2261em; margin-bottom: 1.4361em; font-weight:normal; font-style: normal; color:#333;}
+
+h3, .h3{font-size: 1.4615em; /* 19px */ line-height: 1em; /* 19px */ margin-top: 1em; margin-bottom: 0em; font-weight:normal; font-style: normal; color:#555;}
+
+h2+h3,
+.h2+.h3	{margin-top: 0; margin-bottom: 1em; }
+
+h4, .h4{font-size: 1.4615em; /* 19px */ line-height: 1em; /* 19px */ margin-top: 1em; margin-bottom: 0em; font-weight:normal; font-style: normal; color: #333;}
+
+h5, .h5{font-size: 1.1538em; /* 15px */ line-height: 1.2667em; /* 19px */ margin-top: 1.2667em; margin-bottom: 0em; font-weight:bold; font-style: normal; color:#353535;}
+
+h6, .h6{font-size: 0.7692em; /* 10px */ line-height: 1.9em; /* 19px */ margin-top: 1.9em; margin-bottom: 0em; /* 15px */ font-weight:normal;  font-style: italic; color:#333;}
+
+.category{font-size: 1.1538em; /* 15px */ line-height: 1.2667em; /* 19px */ margin-top: 1.2667em; margin-bottom: 0em;  font-weight:normal; font-style: normal; text-transform:uppercase; color: #333;}
+
+.main,.leftCol	{
+padding-right: 1.618em;
+}
+
+.leftCol .hd h4,
+.leftCol .hd .h4	{	padding-right: 0.15em; padding-left: 0.35em; padding-bottom: 1.75em;	}
+.leftCol .bd.cats	{	padding-right: 0.25em; padding-left: 0.75em; padding-bottom: 1.75em;	}
+
+.leftCol .bd	li,
+.leftCol .bd	p	{	margin-right: 0.25em; margin-left: 0.75em; margin-bottom: 1.5em;	}
+
+.body .main .mod	{	margin-bottom: 1.5em	}
+
+
+.body .main p img {	float: left; margin: -0.15em 2em 2em 0	}
+.body .main p img.ipop {	float: right; margin: 1.25em; margin-right: 1.8em; border: 3px solid black	}
