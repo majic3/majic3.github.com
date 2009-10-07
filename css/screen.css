@@ -1,0 +1,83 @@
+
+@import url("libraries.css");
+@import url("template.css");
+@import url("grids.css");
+@import url("content.css");
+@import url("mod.css");
+@import url("mod_skin.css");
+@import url("navigation.css");
+@import url("navigation_skin.css");
+
+	.page {
+		margin-top: .9em;
+		width: 1020px;
+	}
+		.page .head	{
+			height: auto;
+			margin-top: .9em;
+			background: transparent url('majic3/hat-on-white.png') no-repeat top left;
+		}
+		.page .head h1,.page .head h2	{
+			margin-left: 135px;
+			padding-top: 20px;
+		}
+		.page .leftCol	{
+			width: 320px;
+		}
+
+		.page .body	{
+			margin: 1.614em 0 1.614em 0;
+		}
+
+		.page .main	{
+			margin-bottom: 1.614em;
+		}
+
+	.core.nv	{
+		background: transparent;
+		margin: -1.614em 0 1.614em  0;
+	}
+		.core.nv .tabs	{
+			display: block;
+			float: right;
+			margin-right: .9em;
+		}
+
+		.core.nv .tabs	a {
+			border: 0;
+			border-bottom: 3px solid #AAA;
+		}
+
+		.core.nv .tabs	a:hover {
+			background: transparent;
+			border-bottom: 3px solid #444;
+		}
+
+		.core.nv .tabs	.current a {
+			border-bottom: 3px solid #47D;
+		}
+
+	#skipto	{
+		position: absolute;
+		top: .3em;
+		right: 8%;
+	}
+
+	.foot {
+		width: 80%;
+		margin: .5em auto; padding-top: 1.5em;
+		border: 0;
+		border-top: 1px solid #dedede
+	}
+
+	.foot .email	{
+		float: left;
+		text-align: left;
+		width: 23%; 
+	}
+
+	.foot .majic3	{
+		float: right;
+		text-align: right;
+		width: 23%; 
+	}

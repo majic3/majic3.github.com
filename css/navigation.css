@@ -117,7 +117,7 @@ ul.tabs, ul.tabs li ul { display: block; }
 	.nv.crumbs li a {
 		display:block;
 		padding:0 15px 0 0;
-		background:url(/css/oo/skin/nav/crumbs.gif) no-repeat right center;
+		background:url(skin/nav/crumbs.gif) no-repeat right center;
 	}
 
 
