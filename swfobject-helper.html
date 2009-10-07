@@ -18,10 +18,16 @@
 		width: 1020px;
 	}
 	.page .head	{
+		height: 125px;
 		margin-top: .9em;
+		background: transparent url('css/majic3/hat-on-white.png') no-repeat top right;
 	}
 	.page .leftCol	{
 		width: 320px;
+	}
+
+	.page .body	{
+		margin: 1.614em 0 1.614em 0;
 	}
 
 	.page .main	{
@@ -29,17 +35,40 @@
 	}
 
 	.core.nv	{
-		margin: 1.614em 0 1.614em 0;
+		background: transparent;
+		margin: 1.614em 0 1.614em  0;
 	}
 		.core.nv .tabs	{
 			display: block;
 			float: right;
+			margin-right: 145px;
+		}
+
+		.core.nv .tabs	a {
+			border: 0;
+			border-bottom: 3px solid #AAA;
+		}
+
+		.core.nv .tabs	a:hover {
+			background: transparent;
+			border-bottom: 3px solid #444;
+		}
+
+		.core.nv .tabs	.current a {
+			border-bottom: 3px solid #47D;
 		}
 
 	#skipto	{
 		position: absolute;
 		top: .3em;
 		right: 8%;
+	}
+
+	.foot {
+		width: 80%;
+		margin: .5em auto; padding-top: 1.5em;
+		border: 0;
+		border-top: 1px solid #dedede
 	}
 
 	.foot .email	{
@@ -61,15 +90,15 @@
 	<div class="head">
 		<h1>Majic3.github.com</h1>
 		<h2>SwfObject Helper</h2>
-		<!-- div class="core nv">
+		<div class="core nv">
 			<ul class="tabs">
-				<li class="current"><a href="/">home</a></li>
-				<li class="current"><a href="/">Wildflower</a></li>
-				<li class="current"><a href="/">OOCSS</a></li>
-				<li class="current"><a href="/">Cake stuff</a></li>
+				<li><a href="./">home</a></li>
+				<li><a href="wildflower.html">Wildflower</a></li>
+				<li class="current"><a href="oocss.html">OOCSS</a></li>
+				<li><a href="asset.html">Asset<>/a></li>
 			</ul>
 		</div>
-		<div id="skipto" class="nv skip hori">
+		<!-- div id="skipto" class="nv skip hori">
 			<ul class="tabs">
 				<li><a href="#main" class="skipto down">main</a></li>
 				<li><a href="#secondary" class="skipto down">secondary</a></li>
